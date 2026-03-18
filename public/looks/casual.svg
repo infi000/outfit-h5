@@ -1,0 +1,12 @@
+<svg width="600" height="420" viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="420" rx="32" fill="#F8FAFC"/>
+<rect x="34" y="34" width="532" height="352" rx="24" fill="#DBEAFE"/>
+<rect x="76" y="78" width="448" height="264" rx="20" fill="#FFFFFF"/>
+<rect x="130" y="106" width="140" height="120" rx="18" fill="#EFF6FF" stroke="#93C5FD"/>
+<rect x="330" y="106" width="140" height="120" rx="18" fill="#F8FAFC" stroke="#CBD5E1"/>
+<rect x="230" y="244" width="140" height="56" rx="14" fill="#F1F5F9"/>
+<text x="165" y="170" font-size="42">👔</text>
+<text x="364" y="170" font-size="42">👖</text>
+<text x="264" y="279" font-size="42">👟</text>
+<text x="86" y="366" font-size="28" fill="#0F172A" font-family="Arial, sans-serif">周末轻松出门搭配</text>
+</svg>

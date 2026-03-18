@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-top: #f5f7fb;
+  --bg-bottom: #e9eef8;
+  --card: rgba(255, 255, 255, 0.76);
+  --card-strong: rgba(255, 255, 255, 0.9);
+  --line: rgba(15, 23, 42, 0.08);
+  --text: #111827;
+  --muted: #6b7280;
+  --blue: #007aff;
+  --blue-pressed: #0062cc;
+  --danger: #ff3b30;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(0, 122, 255, 0.14), transparent 26%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'PingFang SC', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.ios-shell {
+  position: relative;
+}
+
+.ios-shell::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  backdrop-filter: saturate(120%);
+}
+
+.ios-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.ios-card-strong {
+  background: var(--card-strong);
+}
+
+.ios-segment {
+  background: rgba(118, 118, 128, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.ios-segment-active {
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.12);
+}
+
+.ios-primary-btn {
+  background: linear-gradient(180deg, #1d8bff, var(--blue));
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 122, 255, 0.22);
+}
+
+.ios-primary-btn:active {
+  background: var(--blue-pressed);
+}
+
+.ios-secondary-btn {
+  background: rgba(255, 255, 255, 0.72);
+  color: #111827;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.ios-danger-btn {
+  background: rgba(255, 59, 48, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(255, 59, 48, 0.12);
+}
+
+.ios-input,
+.ios-select {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.ios-input:focus,
+.ios-select:focus {
+  outline: none;
+  border-color: rgba(0, 122, 255, 0.45);
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.12);
+}
+
+.ios-section-title {
+  letter-spacing: -0.02em;
+}
+
+.ios-muted {
+  color: var(--muted);
+}
